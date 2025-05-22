@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Google AI (Frontend-Only - NÃO SEGURO)</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+        Importa a biblioteca Google Generative AI usando importmap.
+        Isso permite usar 'import' no seu script.js.
+    -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Google AI Chatbot</h2>
+            <p style="font-size: 0.7em; color: #ffdddd;">AVISO: API Key no Frontend (Inseguro!)</p>
+        </div>
+        <div id="chat-window" class="chat-window">
+            <!-- Mensagem inicial indicando a necessidade de configurar a API Key -->
+            <div class="message bot-message">
+                <p>Olá! Configure sua API Key no arquivo <code>script.js</code> para começar.</p>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." disabled>
+            <button id="send-button" disabled>Enviar</button>
+        </div>
+    </div>
+
+    <!-- Carregue seu script.js como um módulo -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
