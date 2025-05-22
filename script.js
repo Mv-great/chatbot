@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let chatSession; // Para manter o contexto da conversa com startChat
 
     async function initializeChatbot() {
-        if (!API_KEY || API_KEY === "SUA_API_KEY_DO_GOOGLE_AI_STUDIO_AQUI") {
+        if (!API_KEY || API_KEY === "AIzaSyAzy0sSjCVHM-GJEdF7tH8mMexVx3u_9m0") {
             console.error("API Key não configurada no script.js!");
             addMessageToChat("Erro: API Key não configurada. Por favor, edite o arquivo script.js e insira sua chave.", 'bot');
             return false;
